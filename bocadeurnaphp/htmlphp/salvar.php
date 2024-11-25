@@ -17,7 +17,7 @@ $email = $_POST['email'];
 $idade = $_POST['idade'];
 
 $stmt = $conn->prepare("INSERT INTO usuarios (nome, email, idade) VALUES (?, ?, ?)");
-$stmt->bind_param("ssi", $nome, $email, $idade);  // "s" para string, "i" para inteiro
+$stmt->bind_param("ssi", $nome, $email, $idade);
 
 if ($stmt->execute()) {
     header("Location: votacao.html");
