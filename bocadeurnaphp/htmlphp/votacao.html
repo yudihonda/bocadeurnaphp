@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votação</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/votacao.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">
+          <img src="../img/joinville.png" alt="Joinville" />
+        </a>
+        <div class="button-result">
+          <a href="./htmlphp/resultados.html">Resultados</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="votacaoSection">
+      <h2>Escolha seu Candidato</h2>
+      <div class="candidatos">
+        <div class="candidato">
+          <img src="../img/candidato1.png" alt="Candidato 1" />
+          <p>Adriano Silva</p>
+          <form action="votar.php" method="POST">
+            <input type="hidden" name="candidato" value="1" />
+            <button type="submit">Votar</button>
+          </form>
+        </div>
+        <div class="candidato">
+          <img src="../img/candidato2.jpg" alt="Candidato 2" />
+          <p>Sargento Lima</p>
+          <form action="votar.php" method="POST">
+            <input type="hidden" name="candidato" value="2" />
+            <button type="submit">Votar</button>
+          </form>
+        </div>
+        <div class="candidato">
+          <img src="../img/candidato3.webp" alt="Candidato 3" />
+          <p>Luiz Cláudio Gubert</p>
+          <form action="votar.php" method="POST">
+            <input type="hidden" name="candidato" value="3" />
+            <button type="submit">Votar</button>
+          </form>
+        </div>
+        <div class="candidato">
+          <img src="../img/candidato4.jpg" alt="Candidato 4" />
+          <p>Rodrigo Bornholdt</p>
+          <form action="votar.php" method="POST">
+            <input type="hidden" name="candidato" value="4" />
+            <button type="submit">Votar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="../img/logoFooterPMJ-blue.png" alt="" />
+
+      <div class="footer-info">
+        <span> Prefeitura de Joinville </span>
+        <p>
+          Av. Hermann August Lepper, 10, Centro <br />89221-901 • Joinville • SC
+          - (47) 3431-3233
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
